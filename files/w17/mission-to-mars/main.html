@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="TweenMax.min.js" type="text/javascript" ></script>
+    <script src="three.min.js" type="text/javascript" ></script>
+    <script src="cbuffer.js" type="text/javascript" ></script>
+    
+    <script src="world.js" type="text/javascript" ></script>
+    <script src="serial.js" type="text/javascript" ></script>
+    <script src="mission-to-mars.js" type="text/javascript" ></script>
+
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="game.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+    <textarea id="messages" rows="5" cols="100">&nbsp;</textarea>
+</div>
+
+
+<div class="game-holder" id="gameHolder">
+    <div class="header">
+        <h1><span>the</span>Aviator</h1>
+        <h2>fly it to the end</h2>
+        <div class="score" id="score">
+            <div class="score__content" id="level">
+                <div class="score__label">level</div>
+                <div class="score__value score__value--level" id="levelValue">1</div>
+                <svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+                    <circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790" stroke-width="24px" />
+                    <circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
+                </svg>
+            </div>
+            <div class="score__content" id="dist">
+                <div class="score__label">distance</div>
+                <div class="score__value score__value--dist" id="distValue">000</div>
+            </div>
+            <div class="score__content" id="energy">
+                <div class="score__label">energy</div>
+                <div class="score__value score__value--energy" id="energyValue">
+                    <div class="energy-bar" id="energyBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="world" id="world"></div>
+</div>
+<!-- Demo links -->
+<nav class="meta">
+    <a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/Interactive3DMallMap/" title="Previous Demo"><span>Previous Demo</span></a>
+    <a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=26501" title="Back to the article"><span>Back to the Codrops article</span></a>
+    <a class="demo-link" href="part1.html">Part 1</a>
+    <a class="demo-link" href="part2.html">Part 2</a>
+</nav>
+
+
+</body>
+</html>

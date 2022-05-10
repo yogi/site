@@ -1,0 +1,6 @@
+
+onload = function() {
+    setupSerialComms();
+    setupWorld();
+};
+

@@ -1,0 +1,5 @@
+from koko.lib.shapes import *
+
+cad.shape = cube(-1, 1, -1, 1, -1, 1)
+
+

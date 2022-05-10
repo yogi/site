@@ -1,0 +1,110 @@
+body {
+    padding-top: 70px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom:15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+p, ul, li {
+    font-weight: 200;
+    margin-top: 0px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 2px solid black
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: white;
+    border: none;
+}
+
+.navbar-nav > li > a {
+    color: black;
+}
+
+/*
+a {
+    color: black;
+}
+*/
+
+.navbar-brand {
+    font-weight: 200;
+    font-color: black;
+}
+
+.navbar-accent {
+    height: 3px;
+    background-color: black;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+div.gist div.gist-file div.gist-data {
+    background-color: white;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #cccccc;
+    font-size: 16px;
+    font-family: monospace, courier;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.carousel-control .glyphicon-chevron-right {
+    right: 10%;
+}
+
+.carousel-control .glyphicon-chevron-left {
+    left: 10%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel {
+    background-color: black;
+}
+
+ul {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom-buffer {
+    margin-bottom: 20px;
+}

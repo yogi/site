@@ -1,0 +1,65 @@
+
+<html>
+<!--
+//
+// hello.mag.45.html
+//
+// receive and display magnetic field
+//
+// Neil Gershenfeld 
+// (c) Massachusetts Institute of Technology 2014
+// 
+// This work may be reproduced, modified, distributed, performed, and 
+// displayed for any purpose, but must acknowledge the fab modules 
+// project. Copyright is retained and must be preserved. The work is 
+// provided as is; no warranty is provided, and users accept all 
+// liability.
+//
+-->
+<body>
+<!--
+//
+// set up SVG bargraph
+//
+-->
+<svg width="500" height="100" viewBox="0 0 1 .2">
+    <rect x=".2" y="0" width=".8" height=".2" fill="blue"/>
+    <rect x=".2" y="0" width=".8" height=".2" id="rect" fill="red"/>
+    <text x="0" y="0.125" font-size="0.05" id="text">hello</text>
+</svg>
+<!--
+//
+// open socket, request field values, and update bargraph
+//
+-->
+<script type="application/javascript">
+    onload = function() {
+        chrome.serial.getPorts(function(ports) {
+            ports.forEach(function(port) {
+                console.log(port);
+            });
+        });
+    };
+
+<!--
+var rect = document.getElementById("rect")
+var text = document.getElementById("text")
+var server = "127.0.0.1:1234"
+var socket = new WebSocket("ws://"+server)
+socket.onopen = function (event) {
+   console.log("connected to "+server)
+   socket.send("request")
+   }
+socket.onerror = function (event) {
+   console.log("can't connect to "+server)
+   }
+socket.onmessage = function (event) {
+   value = JSON.parse(event.data)
+   rect.setAttribute("width",.8*value/1023)
+   text.firstChild.nodeValue = value
+   socket.send("request")
+   }
+-->
+</script>
+</body>
+</html>
