@@ -1,5 +1,5 @@
 #!/bin/sh
 
-jekyll build -d ../424
+jekyll build -d out
 
 git ci -am "$@"
